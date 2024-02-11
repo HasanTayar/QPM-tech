@@ -29,9 +29,11 @@ const HeaderEn = () => {
           <Image
             src={"/QPM.LOGO.svg"}
             alt={"QPM-EN-LOGO"}
-            width={200}
-            height={100}
+            width={130}
+            height={70}
+            quality={100}
             layout="intrinsic"
+            className="ml-20"
           />
         </Link>
       </div>
@@ -40,7 +42,7 @@ const HeaderEn = () => {
       <div className="flex justify-center">
         {" "}
         <nav className="hidden md:block">
-          <ul className="flex flex-row space-x-4 md:space-x-8 items-center">
+          <ul className="flex flex-row space-x-4 md:space-x-8 items-center  md:mr-96">
             <li>
               <Link href="/">
                 <div
@@ -85,9 +87,11 @@ const HeaderEn = () => {
                 </div>
               </Link>
             </li>
-            <LangSwitcher />
           </ul>
         </nav>
+        <div className="mr-11">
+          <LangSwitcher />
+        </div>
       </div>
     </header>
   );
