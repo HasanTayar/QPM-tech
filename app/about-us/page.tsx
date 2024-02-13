@@ -31,8 +31,8 @@ const AboutUsPageEn = () => {
               team is dedicated to understanding your business needs and
               delivering tailor-made solutions. Whether you need a mobile
               application, desktop application, or digital marketing services,
-              we've got you covered. Contact us today to take your business to
-              the next level.
+              we&apos;ve got you covered. Contact us today to take your business
+              to the next level.
             </p>
             <ul className="mt-8 grid grid-cols-2 gap-4">
               <li className="flex items-center">
