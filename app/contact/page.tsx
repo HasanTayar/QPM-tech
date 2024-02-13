@@ -1,5 +1,5 @@
 import ContactUsFormEn from "@/components/forms/contact-us-form-en";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Link from "next/link";
 import React from "react";
 // import Map from "@/components/Map";

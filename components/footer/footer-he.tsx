@@ -4,7 +4,7 @@ import { Input } from "../ui/input";
 import Link from "next/link";
 import { Button } from "../ui/button";
 import { GoPaperAirplane } from "react-icons/go";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 const FooterHe = () => {
   return (
