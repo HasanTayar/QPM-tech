@@ -13,17 +13,16 @@ const AboutUsHe = () => {
           <Image
             src="/about-us.avif"
             alt="About us"
-            layout="responsive"
-            width={400}
-            height={300}
-            objectFit="contain"
+            width={1000}
+            height={1000}
+            quality={100}
           />
         </div>
       </div>
       {/* Text content */}
       <div className="w-full md:w-1/2 text-center md:text-right">
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
-          אדיתנו
+          אדתנו
         </h2>
         <p className="text-md md:text-lg mb-4">
           אנחנו חברה עצמאית שהוקמה על ידי חסן דיאב, המתמחה ב פיתוח אתרים

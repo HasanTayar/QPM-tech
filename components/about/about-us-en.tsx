@@ -13,10 +13,9 @@ const AboutUsEn = () => {
           <Image
             src="/about-us.avif"
             alt="About us"
-            layout="responsive"
-            width={400}
-            height={300}
-            objectFit="contain"
+            width={1000}
+            height={1000}
+            quality={100}
           />
         </div>
       </div>

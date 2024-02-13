@@ -1,9 +1,9 @@
-// RootLayout.js
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { usePathname, useSearchParams } from "next/navigation";
+import "./globals.css";
 import HeaderEn from "@/components/header/header-en";
 import FooterEn from "@/components/footer/footer-en";
-import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 

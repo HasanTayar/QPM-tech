@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/legacy/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import LangSwitcher from "../lang-switcher";
 
@@ -17,7 +17,9 @@ const HeaderEn = () => {
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
-
+  if (pathname.startsWith("/he") || pathname.startsWith("/ar")) {
+    return null;
+  }
   return (
     <header
       className={`w-full sticky top-0 flex justify-between items-center p-5 z-50 transition-shadow duration-300 ${
@@ -29,10 +31,9 @@ const HeaderEn = () => {
           <Image
             src={"/QPM.LOGO.svg"}
             alt={"QPM-EN-LOGO"}
-            width={130}
-            height={70}
+            width={200}
+            height={100}
             quality={100}
-            layout="intrinsic"
             className="ml-20"
           />
         </Link>

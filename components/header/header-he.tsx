@@ -71,7 +71,7 @@ const HeaderHe = () => {
                     pathname === "/about-us" ? "underline" : ""
                   }`}
                 >
-                  אדיתנו
+                  אדתנו
                 </div>
               </Link>
             </li>

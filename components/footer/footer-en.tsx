@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { FaInstagram, FaTwitter, FaFacebook, FaYoutube } from "react-icons/fa";
 import { Input } from "../ui/input";
@@ -5,8 +6,13 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import { GoPaperAirplane } from "react-icons/go";
 import Image from "next/legacy/image";
+import { usePathname } from "next/navigation";
 
 const FooterEn = () => {
+  const pathname = usePathname();
+  if (pathname.startsWith("/he") || pathname.startsWith("/ar")) {
+    return null;
+  }
   return (
     <footer className=" px-4 py-8">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center items-start">
@@ -45,9 +51,8 @@ const FooterEn = () => {
             <Image
               src="/QPM.LOGO.svg"
               alt="Quantum Pinnacle Matrix"
-              width={20}
-              height={20}
-              className="w-32 h-auto"
+              width={200}
+              height={200}
             />
           </Link>
         </div>
