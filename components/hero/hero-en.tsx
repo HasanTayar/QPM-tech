@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 const HeroEN = () => {
   return (
@@ -27,9 +28,11 @@ const HeroEN = () => {
           <p className="text-lg lg:text-xl text-black mb-5">
             Creating Websites and Applications for Your Business
           </p>
-          <Button className="font-bold py-2 px-4 w-40 text-xl h-20 rounded">
-            Get Started
-          </Button>
+          <Link href="/contact">
+            <Button className="font-bold py-2 px-4 w-40 text-xl h-20 rounded">
+              Get Started
+            </Button>
+          </Link>
         </div>
 
         <div className="hidden lg:flex lg:w-1/2 h-full justify-end items-end lg:p-10 lg:mt-72">
