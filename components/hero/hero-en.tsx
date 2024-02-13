@@ -26,7 +26,8 @@ const HeroEN = () => {
             Quantum Pinnacle Matrix
           </h1>
           <p className="text-lg lg:text-xl text-black mb-5">
-            Creating Websites and Applications for Your Business
+            We build beautiful and functional websites and applications using
+            the latest technologies.
           </p>
           <Link href="/contact">
             <Button className="font-bold py-2 px-4 w-40 text-xl h-20 rounded">

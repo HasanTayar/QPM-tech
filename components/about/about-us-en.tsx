@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 const AboutUsEn = () => {
   return (
@@ -29,12 +30,14 @@ const AboutUsEn = () => {
           website and application development using Wordpress, HTML, CSS, JS,
           React, and Angular. Our services also include digital marketing.
         </p>
-        <Button
-          variant="outline"
-          className=" font-bold py-2 px-4 w-40 text- h-20 rounded hover:bg-gray-200 transition duration-300"
-        >
-          Learn More
-        </Button>
+        <Link href="/about-us">
+          <Button
+            variant="outline"
+            className=" font-bold py-2 px-4 w-40 text- h-20 rounded hover:bg-gray-200 transition duration-300"
+          >
+            Learn More
+          </Button>
+        </Link>
       </div>
     </section>
   );

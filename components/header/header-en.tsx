@@ -66,6 +66,17 @@ const HeaderEn = () => {
               </Link>
             </li>
             <li>
+              <Link href="/about-us">
+                <div
+                  className={`p-2 hover:text-gray-500 ${
+                    pathname === "/about-us" ? "underline" : ""
+                  }`}
+                >
+                  About us
+                </div>
+              </Link>
+            </li>
+            <li>
               <Link href="/portfolio">
                 <div
                   className={`p-2 hover:text-gray-500 ${
@@ -73,17 +84,6 @@ const HeaderEn = () => {
                   }`}
                 >
                   Portfolio
-                </div>
-              </Link>
-            </li>
-            <li>
-              <Link href="/our-works">
-                <div
-                  className={`p-2 hover:text-gray-500 ${
-                    pathname === "/our-works" ? "underline" : ""
-                  }`}
-                >
-                  Our Works
                 </div>
               </Link>
             </li>
