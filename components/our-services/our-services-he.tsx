@@ -1,11 +1,11 @@
 import Image from "next/image";
 import React from "react";
 
-const OurServicesEn = () => {
+const OurServicesHe = () => {
   return (
     <React.Fragment>
       <h1 className="text-5xl md:text-4xl bg-black p-5  text-white text-center">
-        Our Services
+        השירותים שלנו
       </h1>
 
       <section className="container mx-auto bg-black text-white p-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -24,12 +24,11 @@ const OurServicesEn = () => {
           </div>
           <div className="w-full">
             <h3 className="text-2xl font-bold mt-5 text-center">
-              Website Development
+              פיתוח אתרי אינטרנט
             </h3>
             <p className="mt-5 text-center">
-              We offer a range of services including website and mobile
-              application development, desktop application development, and
-              digital marketing.
+              אנו מציעים מגוון שירותים לרבות אתר אינטרנט ומובייל פיתוח יישומים,
+              פיתוח יישומים שולחניים ו שיווק דיגיטלי.
             </p>
           </div>
         </div>
@@ -49,11 +48,11 @@ const OurServicesEn = () => {
           </div>
           <div className="w-full">
             <h3 className="text-2xl font-bold mt-5 text-center">
-              Application Development
+              פיתוח אפליקציות
             </h3>
             <p className="mt-5 text-center">
-              Our team of experts can create custom websites and applications
-              tailored to meet your specific needs.
+              צוות המומחים שלנו יכול ליצור אתרים ואפליקציות מותאמות אישית מותאם
+              לצרכים הספציפיים שלך.
             </p>
           </div>
         </div>
@@ -71,12 +70,12 @@ const OurServicesEn = () => {
           </div>
           <div className="w-full">
             <h3 className="text-2xl font-bold mt-5 text-center">
-              Digital Marketing
+              שיווק דיגיטלי
             </h3>
             <p className="mt-5 text-center">
-              Our experts provide custom digital marketing services to help you
-              achieve your goals. We offer SEO, PPC, social media, email
-              marketing, and more.
+              המומחים שלנו מספקים שירותי שיווק דיגיטלי מותאמים אישית כדי לעזור
+              לך להשיג את המטרות שלך. אנו מציעים SEO, PPC, מדיה חברתית, אימייל
+              שיווק ועוד.
             </p>
           </div>
         </div>
@@ -85,4 +84,4 @@ const OurServicesEn = () => {
   );
 };
 
-export default OurServicesEn;
+export default OurServicesHe;

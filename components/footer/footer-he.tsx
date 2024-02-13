@@ -6,24 +6,24 @@ import { Button } from "../ui/button";
 import { GoPaperAirplane } from "react-icons/go";
 import Image from "next/image";
 
-const FooterEn = () => {
+const FooterHe = () => {
   return (
-    <footer className=" px-4 py-8">
+    <footer className=" px-4 py-8" dir="rtl">
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center items-start">
         <div className="col-span-1">
-          <label className="font-bold">Subscribe to our newsletter</label>
+          <label className="font-bold">הירשם לניוזלטר שלנו</label>
           <Input
             type="email"
-            placeholder="Subscribe to our newsletter"
+            placeholder="הירשם לניוזלטר שלנו"
             className="border border-gray-300 rounded-lg py-2 px-4 mt-2"
           />
           <Button className="mt-5">
-            Submit <GoPaperAirplane className="h-3 w-3 ml-4" />
+            <GoPaperAirplane className="h-3 w-3 ml-4" /> שלח
           </Button>
         </div>
 
         <div className="col-span-1">
-          <label className="font-bold">Contact</label>
+          <label className="font-bold">צור קשר</label>
           <Link href="mailto:info@quantumpinnaclematrix.tech">
             <p className="hover:text-gray-200 cursor-pointer">
               info@quantumpinnaclematrix.tech
@@ -32,7 +32,7 @@ const FooterEn = () => {
           <Link href="tel:+972524802045">(+972)-524802045</Link>
         </div>
         <div className="col-span-1">
-          <h1 className="font-bold">Social Media</h1>
+          <h1 className="font-bold">תעקבו אחרינו</h1>
           <div className="flex space-x-4">
             <FaYoutube className="w-8 h-8 hover:text-red-500 cursor-pointer" />
             <FaInstagram className="w-8 h-8 hover:text-pink-500 cursor-pointer" />
@@ -51,10 +51,10 @@ const FooterEn = () => {
         </div>
       </div>
       <div className="mt-8 text-center text-gray-400">
-        © 2024 Quantum Pinnacle Matrix. All rights reserved.
+        © 2024 Quantum Pinnacle Matrix. כל הזכויות שמורות.
       </div>
     </footer>
   );
 };
 
-export default FooterEn;
+export default FooterHe;

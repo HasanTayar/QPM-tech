@@ -7,7 +7,9 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { useRouter } from "next/navigation";
 const LangSwitcher = () => {
+  const router = useRouter();
   return (
     <section>
       <DropdownMenu>
@@ -18,10 +20,12 @@ const LangSwitcher = () => {
           </Button>
         </DropdownMenuTrigger>
         <DropdownMenuContent align="start">
-          <DropdownMenuItem onClick={() => console.log()}>
+          <DropdownMenuItem onClick={() => router.push("/")}>
             English
           </DropdownMenuItem>
-          <DropdownMenuItem onClick={() => console.log}>עברית</DropdownMenuItem>
+          <DropdownMenuItem onClick={() => router.push("/he/")}>
+            עברית
+          </DropdownMenuItem>
           <DropdownMenuItem onClick={() => console.log}>
             العربية
           </DropdownMenuItem>
