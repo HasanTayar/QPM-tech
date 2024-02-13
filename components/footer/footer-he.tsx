@@ -45,6 +45,8 @@ const FooterHe = () => {
             <Image
               src="/QPM.LOGO.svg"
               alt="Quantum Pinnacle Matrix"
+              width={20}
+              height={20}
               className="w-32 h-auto"
             />
           </Link>

@@ -44,6 +44,7 @@ const OurServicesHe = () => {
               width={300}
               height={200}
               quality={100}
+              suppressHydrationWarning
             />
           </div>
           <div className="w-full">
@@ -66,6 +67,7 @@ const OurServicesHe = () => {
               width={300}
               height={200}
               quality={100}
+              suppressHydrationWarning
             />
           </div>
           <div className="w-full">

@@ -1,8 +1,9 @@
+// RootLayout.js
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import "./globals.css";
 import HeaderEn from "@/components/header/header-en";
 import FooterEn from "@/components/footer/footer-en";
+import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -13,10 +14,8 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  lang,
 }: Readonly<{
   children: React.ReactNode;
-  lang?: string;
 }>) {
   return (
     <html lang="en">

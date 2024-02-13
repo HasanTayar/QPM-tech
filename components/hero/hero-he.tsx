@@ -17,6 +17,7 @@ const HeroHe = () => {
             height={412}
             objectFit="cover"
             quality={100}
+            suppressHydrationWarning
           />
         </div>
 
@@ -44,6 +45,7 @@ const HeroHe = () => {
             height={412}
             objectFit="cover"
             quality={100}
+            suppressHydrationWarning
           />
         </div>
       </div>
@@ -60,6 +62,7 @@ const HeroHe = () => {
             height={256}
             objectFit="cover"
             quality={100}
+            suppressHydrationWarning
           />
         </div>
         {/* Image 2 */}
@@ -72,6 +75,7 @@ const HeroHe = () => {
             height={256}
             objectFit="cover"
             quality={100}
+            suppressHydrationWarning
           />
         </div>
       </div>
