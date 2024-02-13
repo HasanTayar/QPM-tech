@@ -30,7 +30,7 @@ const HeroAr = () => {
             نحن نبني مواقع وتطبيقات عملية وجميلة باستخدام أحدث التقنيات
             المبتكرة.
           </p>
-          <Link href="/he/contact">
+          <Link href="/ar/contact">
             <Button className="font-bold py-2 px-4 w-40 text-xl h-20 rounded">
               لنبدأ
             </Button>

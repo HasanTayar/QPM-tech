@@ -5,7 +5,7 @@ const noto_sans_hebrew = Noto_Sans_Hebrew({ subsets: ["hebrew"] });
 import "../globals.css";
 import HeaderAr from "@/components/header/header-ar";
 import FooterAr from "@/components/footer/footer-ar";
-export default function HeLayout({ children }: { children: React.ReactNode }) {
+export default function ArLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ar" suppressHydrationWarning>
       <body className={noto_sans_hebrew.className}>

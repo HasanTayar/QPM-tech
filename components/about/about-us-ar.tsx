@@ -29,7 +29,7 @@ const AboutUsHe = () => {
           والتطبيقات التي تستخدم WordPress وHTML وCSS وJS وReact وAngular.
           الخدمات تشمل خدماتنا أيضًا التسويق الرقمي.
         </p>
-        <Link href="/he/about-us">
+        <Link href="/ar/about-us">
           <Button
             variant="outline"
             className=" font-bold py-2 px-4 w-40 text-right h-20 rounded hover:bg-gray-200 transition duration-300"

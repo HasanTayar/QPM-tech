@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import { GoPaperAirplane } from "react-icons/go";
 import Image from "next/legacy/image";
+import { usePathname } from "next/navigation";
 
 const FooterAr = () => {
   return (
@@ -48,7 +49,7 @@ const FooterAr = () => {
           </div>
         </div>
         <div className="col-span-1 hidden lg:block">
-          <Link href="/">
+          <Link href="/ar">
             <Image
               src="/QPM.LOGO.svg"
               alt="Quantum Pinnacle Matrix"

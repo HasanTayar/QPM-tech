@@ -8,6 +8,7 @@ import LangSwitcher from "../lang-switcher";
 const HeaderHe = () => {
   const [hasScrolled, setHasScrolled] = useState(false);
   const pathname = usePathname();
+
   useEffect(() => {
     const handleScroll = () => {
       setHasScrolled(window.scrollY > 10);

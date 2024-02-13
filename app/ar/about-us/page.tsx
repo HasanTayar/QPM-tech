@@ -182,7 +182,7 @@ const AboutUsArPage = () => {
           {/* Add more project sections here */}
         </div>
         <div className="flex justify-center items-center mt-8">
-          <Link href="/he/contact">
+          <Link href="/ar/contact">
             <Button className="text-white text-lg px-8 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50">
               اتصل بنا الآن!{" "}
             </Button>
