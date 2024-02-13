@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import LangSwitcher from "../lang-switcher";
 
-const HeaderHe = () => {
+const HeaderAr = () => {
   const [hasScrolled, setHasScrolled] = useState(false);
   const pathname = usePathname();
   useEffect(() => {
@@ -25,7 +25,7 @@ const HeaderHe = () => {
       }`}
     >
       <div className="flex-shrink-0">
-        <Link href="/he/">
+        <Link href="/ar/">
           <Image
             src={"/QPM.LOGO.svg"}
             alt={"QPM-HE-LOGO"}
@@ -43,46 +43,46 @@ const HeaderHe = () => {
         <nav className="hidden md:block">
           <ul className="flex flex-row space-x-4 md:space-x-8 items-center  md:mr-96">
             <li>
-              <Link href="/he">
+              <Link href="/ar">
                 <div
                   className={`p-2 hover:text-gray-500 ${
-                    pathname === `/he` ? "underline" : ""
+                    pathname === `/ar` ? "underline" : ""
                   }`}
                 >
-                  דף ראשי
+                  الصفحة الرئيسية{" "}
                 </div>
               </Link>
             </li>
             <li>
-              <Link href="/he/contact">
+              <Link href="/ar/contact">
                 <div
                   className={`p-2 hover:text-gray-500 ${
-                    pathname === "/he/contact" ? "underline" : ""
+                    pathname === "/ar/contact" ? "underline" : ""
                   }`}
                 >
-                  צור קשר
+                  تواصل معنا{" "}
                 </div>
               </Link>
             </li>
             <li>
-              <Link href="/he/about-us">
+              <Link href="/ar/about-us">
                 <div
                   className={`p-2 hover:text-gray-500 ${
-                    pathname === "/he/about-us" ? "underline" : ""
+                    pathname === "/ar/about-us" ? "underline" : ""
                   }`}
                 >
-                  אדתנו
+                  حولنا
                 </div>
               </Link>
             </li>
             <li>
-              <Link href="/he/portfolio">
+              <Link href="/ar/portfolio">
                 <div
                   className={`p-2 hover:text-gray-500 ${
-                    pathname === "/he/portfolio" ? "underline" : ""
+                    pathname === "/ar/portfolio" ? "underline" : ""
                   }`}
                 >
-                  עבדות שלנו
+                  أعمالنا{" "}
                 </div>
               </Link>
             </li>
@@ -96,4 +96,4 @@ const HeaderHe = () => {
   );
 };
 
-export default HeaderHe;
+export default HeaderAr;

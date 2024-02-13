@@ -1,4 +1,4 @@
-import ContactUsFormHe from "@/components/forms/contact-us-form-he";
+import ContactUsFormAr from "@/components/forms/contact-us-form-ar";
 import Link from "next/link";
 import React from "react";
 // import Map from "@/components/Map";
@@ -11,11 +11,11 @@ const ContactPageAr = () => {
         {/* Increase spacing progressively for larger screens */}
         <h1 className="font-bold text-3xl md:text-4xl lg:text-5xl text-slate-900">
           {/* Adjust font sizes for different screens */}
-          צור קשר!
+          أتصل بنا{" "}
         </h1>
         <p className="text-base md:text-lg">
           {/* Adjust base text size for readability */}
-          צור איתנו קשר עוד היום!{" "}
+          اتصل بنا اليوم!{" "}
         </p>
         <Link href="mailto:info@quantumpinnaclematrix.tech">
           <p className="text-blue-600 hover:text-blue-800 visited:text-purple-600">
@@ -23,23 +23,23 @@ const ContactPageAr = () => {
           </p>
         </Link>
         <section className="flex flex-col md:flex-row md:justify-between items-center">
-          <ContactUsFormHe />
+          <ContactUsFormAr />
         </section>
         <section className="mt-8">
           <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl text-slate-900 p-4">
-            מקום
+            موقعنا
           </h2>
           {/* Uncomment and use the Map component when ready, ensuring it's responsive */}
         </section>
         <section className="mt-8 p-4">
           <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl text-slate-900">
-            כתובת | שעות עבודה{" "}
+            العنوان | ساعات العمل{" "}
           </h2>
           <p className="text-lg md:text-xl text-slate-500 mt-4">
-            טמרה, מחוז צפון, ישראל{" "}
+            طمرة, المنطقة الشمالية, إسرائيل{" "}
           </p>
           <p className="text-lg md:text-xl text-slate-500 mt-4">
-            ראשון-שישי:9:00-17:00
+            الأحد-الجمعة: 9:00-17:00{" "}
           </p>
         </section>
       </div>

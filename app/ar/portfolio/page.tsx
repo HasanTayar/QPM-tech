@@ -2,13 +2,13 @@ import React from "react";
 import Image from "next/legacy/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { ProjectsHe } from "@/constants/projects";
+import { ProjectsAr } from "@/constants/projects";
 
-const PortfolioPageAr = () => {
+const PortfolioPageHe = () => {
   return (
     <main className="container mx-auto px-4 lg:px-8 xl:px-16" dir="rtl">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {ProjectsHe.map((project) => (
+        {ProjectsAr.map((project) => (
           <div
             key={project.id}
             className="bg-white rounded-lg shadow-md overflow-hidden"
@@ -31,7 +31,7 @@ const PortfolioPageAr = () => {
                   className={`hover:underline`}
                   disabled={project.link === "#"}
                 >
-                  צפה בפרויקט{" "}
+                  عرض المشروع{" "}
                 </Button>
               </Link>
             </div>
@@ -42,4 +42,4 @@ const PortfolioPageAr = () => {
   );
 };
 
-export default PortfolioPageAr;
+export default PortfolioPageHe;

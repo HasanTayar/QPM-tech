@@ -3,7 +3,7 @@ import React from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
-import { ContactUsSchemaHe } from "@/schemas";
+import { ContactUsSchemaAr } from "@/schemas";
 import { Button } from "@/components/ui/button";
 import {
   Form,
@@ -17,16 +17,16 @@ import {
 import { Input } from "@/components/ui/input";
 import { Textarea } from "../ui/textarea";
 
-const ContactUsFormHe = () => {
-  const form = useForm<z.infer<typeof ContactUsSchemaHe>>({
-    resolver: zodResolver(ContactUsSchemaHe),
+const ContactUsFormAr = () => {
+  const form = useForm<z.infer<typeof ContactUsSchemaAr>>({
+    resolver: zodResolver(ContactUsSchemaAr),
     defaultValues: {
       name: "",
       email: "",
       message: "",
     },
   });
-  function onSubmit(values: z.infer<typeof ContactUsSchemaHe>) {
+  function onSubmit(values: z.infer<typeof ContactUsSchemaAr>) {
     // Do something with the form values.
     // ✅ This will be type-safe and validated.
     console.log(values);
@@ -44,10 +44,10 @@ const ContactUsFormHe = () => {
             render={({ field }) => (
               <FormItem>
                 <FormLabel>
-                  <p className="bold text-red-500">*</p> שם
+                  <p className="bold text-red-500">*</p> اسم
                 </FormLabel>
                 <FormControl>
-                  <Input placeholder="השם שלכה" {...field} />
+                  <Input placeholder="اسمك" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -59,7 +59,7 @@ const ContactUsFormHe = () => {
             render={({ field }) => (
               <FormItem>
                 <FormLabel>
-                  <p className="bold text-red-500">*</p> איימ״ל
+                  <p className="bold text-red-500">*</p> البريد الإلكتروني
                 </FormLabel>
                 <FormControl>
                   <Input
@@ -78,10 +78,10 @@ const ContactUsFormHe = () => {
             render={({ field }) => (
               <FormItem>
                 <FormLabel>
-                  <p className="bold text-red-500">*</p> הודעה
+                  <p className="bold text-red-500">*</p> رسالة
                 </FormLabel>
                 <FormControl>
-                  <Textarea placeholder="הודעה שלכה " {...field} />
+                  <Textarea placeholder="رسالتك" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -92,7 +92,7 @@ const ContactUsFormHe = () => {
               type="submit"
               className=" text-white py-2 px-4 rounded hover:bg-purple-600 w-52 h-10"
             >
-              שלח הודעה
+              ارسل رسالة{" "}
             </Button>
           </div>
         </form>
@@ -101,4 +101,4 @@ const ContactUsFormHe = () => {
   );
 };
 
-export default ContactUsFormHe;
+export default ContactUsFormAr;

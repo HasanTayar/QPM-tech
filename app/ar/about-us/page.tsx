@@ -21,16 +21,16 @@ const AboutUsArPage = () => {
           </div>
           <div className="mt-4 md:mt-0 md:ml-8 w-full md:w-1/2">
             <h1 className="text-center font-bold text-4xl md:text-5xl">
-              מפתחים מנוסים{" "}
+              المطورين ذوي الخبرة{" "}
             </h1>
             <p className="text-lg leading-relaxed mt-4">
-              עם תשוקה לפיתוח אתרים והתמקדות בלקוח סיפוק, Quantum Pinnacle
-              Matrix יצרה מדהים אתרים ואפליקציות מאז 2022. אנו מתמחים בפיתוח
-              אתרים המשתמשים בוורדפרס, HTML, CSS, JS, React ו-Angular. שֶׁלָנוּ
-              הצוות מוקדש להבנת הצרכים העסקיים שלך מתן פתרונות מותאמים אישית.
-              בין אם אתה צריך נייד יישום, יישום שולחני או שירותי שיווק דיגיטלי,
-              אנחנו מכוסים אותך. צור איתנו קשר עוד היום כדי לקחת את העסק שלך
-              לשלב הבא.
+              مع شغفنا في تطوير الويب والتركيز على رضا العملاء، Quantum Pinnacle
+              تقوم ماتريكس بإنشاء مواقع وتطبيقات مذهلة منذ عام 2022. نحن متخصصون
+              في التطوير مواقع الويب التي تستخدم WordPress وHTML وCSS وJS وReact
+              وAngular. لنا الفريق مكرس لفهم احتياجات عملك وتقديم حلول مخصصة.
+              سواء كنت بحاجة إلى تطبيق جوال أو تطبيق سطح مكتب أو خدمات تسويق
+              رقمية، لقد حصلت على تغطيتها. اتصل بنا اليوم لاتخاذ عملك إلى الخطوة
+              التالية.
             </p>
             <ul className="mt-8 grid grid-cols-2 gap-4">
               <li className="flex items-center">
@@ -48,8 +48,8 @@ const AboutUsArPage = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <p>מומחיות</p>
-                <span className="ml-2 text-gray-500">Since 2022</span>
+                <p>خبرة</p>
+                <span className="ml-2 text-gray-500">منذ عام 2022</span>
               </li>
               <li className="flex items-center">
                 <svg
@@ -66,8 +66,8 @@ const AboutUsArPage = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <p>בניית אתרים מוצלחים</p>
-                <span className="ml-2 text-gray-500">Since 2022</span>
+                <p>بناء مواقع ناجحة</p>
+                <span className="ml-2 text-gray-500">منذ عام 2022</span>
               </li>
               <li className="flex items-center">
                 <svg
@@ -84,8 +84,8 @@ const AboutUsArPage = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <p>מתן פתרונות מותאמים אישית</p>
-                <span className="ml-2 text-gray-500">Since 2022</span>
+                <p>تقديم حلول مخصصة</p>{" "}
+                <span className="ml-2 text-gray-500">منذ عام 2022</span>
               </li>
               <li className="flex items-center">
                 <svg
@@ -102,8 +102,8 @@ const AboutUsArPage = () => {
                     d="M5 13l4 4L19 7"
                   />
                 </svg>
-                <p>יצירת פתרונות חדשניים</p>
-                <span className="ml-2 text-gray-500">Since 2022</span>
+                <p>إنشاء حلول مبتكرة</p>{" "}
+                <span className="ml-2 text-gray-500">منذ عام 2022</span>
               </li>
             </ul>
           </div>
@@ -112,12 +112,12 @@ const AboutUsArPage = () => {
       {/* Section talking about Innovative Projects */}
       <section className="my-8 lg:my-12">
         <h1 className="text-4xl lg:text-5xl font-bold text-center mb-4">
-          פרויקטים חדשניים{" "}
+          مشاريع مبتكرة{" "}
         </h1>
         <p className="text-lg leading-relaxed mb-8 text-center">
-          תיק העבודות שלנו מציג את המומחיות שלנו בפיתוח חדשני פרויקטים העונים על
-          הדרישות הייחודיות של לקוחותינו. מ אתרי מסחר אלקטרוני ליישומים
-          ארגוניים, יש לנו בהצלחה העביר מגוון רחב של פרויקטים.
+          تعرض أعمالنا خبرتنا في تطوير المشاريع المبتكرة التي تلبي احتياجاتنا
+          المتطلبات الفريدة لعملائنا. من مواقع التجارة الإلكترونية إلى التطبيقات
+          الشركة، لقد نجحنا في تسليم مجموعة واسعة من المشاريع.
         </p>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div className="mx-auto">
@@ -130,12 +130,13 @@ const AboutUsArPage = () => {
               className="rounded-lg"
             />
             <h2 className="text-xl lg:text-2xl font-bold mt-4 mb-2 text-center">
-              פתרונות מסחר אלקטרוני{" "}
+              حلول التجارة الإلكترونية{" "}
             </h2>
             <p className="text-lg leading-relaxed mb-4 text-center">
-              אנו מתמחים ביצירת פתרונות מסחר אלקטרוני מותאמים לעזור לעסקים להניע
-              מכירות ולהגדיל הכנסות. לצוות שלנו יש ניסיון רב בפיתוח מקוון מאובטח
-              וידידותי למשתמש חנויות המספקות חווית קניה חלקה.
+              نحن متخصصون في إنشاء حلول مخصصة للتجارة الإلكترونية لمساعدة
+              الشركات على القيادة المبيعات وزيادة الإيرادات. يتمتع فريقنا بخبرة
+              واسعة في التطوير الآمن عبر الإنترنت ومتاجر سهلة الاستخدام توفر
+              تجربة تسوق سلسة.
             </p>
           </div>
           <div className="mx-auto">
@@ -148,13 +149,13 @@ const AboutUsArPage = () => {
               className="rounded-lg"
             />
             <h2 className="text-xl lg:text-2xl font-bold mt-4 mb-2 text-center">
-              אפליקציות ניידות{" "}
+              تطبيقات الموبايل{" "}
             </h2>
             <p className="text-lg leading-relaxed mb-4 text-center">
-              האפליקציות שלנו לנייד נועדו לספק משתמש יוצא דופן חוויות ועונה על
-              הצרכים הספציפיים של לקוחותינו. אנחנו מפתחים אפליקציות מקוריות
-              וחוצות פלטפורמות עבור מכשירי iOS ואנדרואיד, הבטחת תאימות וביצועים
-              בכל הפלטפורמות.
+              تم تصميم تطبيقات الهاتف المحمول الخاصة بنا لتوفير تجارب وإجابات
+              استثنائية للمستخدم الاحتياجات المحددة لعملائنا. نحن نطور التطبيقات
+              الأصلية ومتعددة المنصات لأجهزة iOS وAndroid، مما يضمن التوافق
+              والأداء على جميع المنصات.
             </p>
           </div>
           <div className="mx-auto">
@@ -167,14 +168,15 @@ const AboutUsArPage = () => {
               className="rounded-lg"
             />
             <h2 className="text-xl lg:text-2xl font-bold mt-4 mb-2 text-center">
-              שיווק דיגיטלי{" "}
+              التسويق الرقمي{" "}
             </h2>
             <p className="text-lg leading-relaxed mb-4 text-center">
-              אנו עוזרים לך להצמיח את העסק שלך באינטרנט באמצעות דיגיטל אפקטיבי
-              שירותי שיווק. אנו יוצרים ומבצעים אסטרטגיות לקידום אתרים, PPC, מדיה
-              חברתית, שיווק בדואר אלקטרוני ועוד. אנו משתמשים בנתונים ובכלים כדי
-              בצע אופטימיזציה ומדוד את מסעות הפרסום שלך. אנחנו יכולים לעזור לך
-              להשיג את שלך מטרות שיווק דיגיטלי.
+              نحن نساعدك على تنمية أعمالك عبر الإنترنت من خلال الوسائل الرقمية
+              الفعالة خدمات التسويق. نقوم بإنشاء وتنفيذ استراتيجيات تحسين محركات
+              البحث (SEO) والدفع لكل نقرة (PPC) والإعلام وسائل التواصل الاجتماعي
+              والتسويق عبر البريد الإلكتروني والمزيد. نحن نستخدم البيانات
+              والأدوات ل تحسين وقياس حملاتك. يمكننا مساعدتك حقق أهدافك التسويقية
+              الرقمية.
             </p>
           </div>
           {/* Add more project sections here */}
@@ -182,7 +184,7 @@ const AboutUsArPage = () => {
         <div className="flex justify-center items-center mt-8">
           <Link href="/he/contact">
             <Button className="text-white text-lg px-8 py-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-600 focus:ring-opacity-50">
-              צור איתנו קשר עכשיו!{" "}
+              اتصل بنا الآن!{" "}
             </Button>
           </Link>
         </div>

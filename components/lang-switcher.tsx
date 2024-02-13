@@ -26,7 +26,7 @@ const LangSwitcher = () => {
           <DropdownMenuItem onClick={() => router.push("/he/")}>
             עברית
           </DropdownMenuItem>
-          <DropdownMenuItem onClick={() => console.log}>
+          <DropdownMenuItem onClick={() => router.push("/ar/")}>
             العربية
           </DropdownMenuItem>
         </DropdownMenuContent>

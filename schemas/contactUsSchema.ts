@@ -22,3 +22,14 @@ export const ContactUsSchemaHe = z.object({
     message: "הודעה שלך ללא תוכן. אנא כתוב משהו כדי ליצור איתנו קשר.",
   }),
 });
+export const ContactUsSchemaAr = z.object({
+  name: z.string().min(2, {
+    message: "اسمك قصير جدًا. الرجاء إدخال حرفين على الأقل.",
+  }),
+  email: z.string().email({
+    message: "بريدك الإلكتروني غير صالح. يرجى إدخال عنوان بريد إلكتروني صالح.",
+  }),
+  message: z.string().min(2, {
+    message: "رسالتك لا تحتوي على محتوى. يرجى كتابة شيء للاتصال بنا.",
+  }),
+});

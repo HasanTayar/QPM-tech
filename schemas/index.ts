@@ -1,2 +1,6 @@
-import { ContactUsSchemaEN, ContactUsSchemaHe } from "./contactUsSchema";
-export { ContactUsSchemaEN, ContactUsSchemaHe };
+import {
+  ContactUsSchemaEN,
+  ContactUsSchemaHe,
+  ContactUsSchemaAr,
+} from "./contactUsSchema";
+export { ContactUsSchemaEN, ContactUsSchemaHe, ContactUsSchemaAr };
