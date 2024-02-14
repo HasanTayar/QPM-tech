@@ -1,4 +1,4 @@
-import AboutUsHe from "@/components/about/about-us-ar";
+import AboutUsHe from "@/components/about/about-us-he";
 import ContactUsFormHe from "@/components/forms/contact-us-form-he";
 import HeroHe from "@/components/hero/hero-he";
 import OurServicesHe from "@/components/our-services/our-services-he";

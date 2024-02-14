@@ -49,7 +49,7 @@ const AboutUsArPage = () => {
                   />
                 </svg>
                 <p>מומחיות</p>
-                <span className="ml-2 text-gray-500">Since 2022</span>
+                <span className="mr-2 text-gray-500">מאז 2022</span>
               </li>
               <li className="flex items-center">
                 <svg
@@ -67,7 +67,7 @@ const AboutUsArPage = () => {
                   />
                 </svg>
                 <p>בניית אתרים מוצלחים</p>
-                <span className="ml-2 text-gray-500">Since 2022</span>
+                <span className="mr-2 text-gray-500">מאז 2022</span>
               </li>
               <li className="flex items-center">
                 <svg
@@ -85,7 +85,7 @@ const AboutUsArPage = () => {
                   />
                 </svg>
                 <p>מתן פתרונות מותאמים אישית</p>
-                <span className="ml-2 text-gray-500">Since 2022</span>
+                <span className="mr-2 text-gray-500">מאז 2022</span>
               </li>
               <li className="flex items-center">
                 <svg
@@ -103,7 +103,7 @@ const AboutUsArPage = () => {
                   />
                 </svg>
                 <p>יצירת פתרונות חדשניים</p>
-                <span className="ml-2 text-gray-500">Since 2022</span>
+                <span className="mr-2 text-gray-500">מאז 2022</span>
               </li>
             </ul>
           </div>

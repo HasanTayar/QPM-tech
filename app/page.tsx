@@ -2,7 +2,6 @@ import AboutUsEn from "@/components/about/about-us-en";
 import ContactUsFormEn from "@/components/forms/contact-us-form-en";
 import HeroEn from "@/components/hero/hero-en";
 import OurServicesEn from "@/components/our-services/our-services-en";
-import Image from "next/legacy/image";
 
 export default function Home() {
   return (
