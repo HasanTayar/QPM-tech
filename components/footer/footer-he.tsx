@@ -9,6 +9,7 @@ import Image from "next/legacy/image";
 import { usePathname } from "next/navigation";
 import axios from "axios";
 import { useToast } from "@/components/ui/use-toast";
+import { Link2 } from "lucide-react";
 
 const HeFooter = () => {
   const { toast } = useToast();
@@ -85,11 +86,15 @@ const HeFooter = () => {
         </div>
         <div className="col-span-1">
           <h1 className="font-bold">תעקבו אחרינו</h1>
-          <div className="flex space-x-4">
-            <FaYoutube className="w-8 h-8 ml-3 hover:text-red-500 cursor-pointer" />
-            <FaInstagram className="w-8 h-8 hover:text-pink-500 cursor-pointer" />
-            <FaTwitter className="w-8 h-8 hover:text-blue-500 cursor-pointer" />
-            <FaFacebook className="w-8 h-8 hover:text-blue-700 cursor-pointer" />
+          <div className="flex space-x-6">
+            <Link href={"https://www.instagram.com/qpm.tech/"}>
+              <FaInstagram className="w-8 h-8 hover:text-pink-500 cursor-pointer" />
+            </Link>
+            <Link
+              href={"https://www.facebook.com/profile.php?id=61556657064896"}
+            >
+              <FaFacebook className="w-8 h-8 hover:text-blue-700 cursor-pointer" />
+            </Link>
           </div>
         </div>
         <div className="col-span-1 hidden lg:block">
