@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -16,20 +16,54 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "../ui/textarea";
+import axios from "axios";
+import { toast } from "../ui/use-toast";
 
 const ContactUsFormHe = () => {
+  const [loading, setLoading] = React.useState(false);
   const form = useForm<z.infer<typeof ContactUsSchemaHe>>({
     resolver: zodResolver(ContactUsSchemaHe),
     defaultValues: {
       name: "",
       email: "",
+      phone: "",
       message: "",
     },
   });
-  function onSubmit(values: z.infer<typeof ContactUsSchemaHe>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof ContactUsSchemaHe>) {
+    try {
+      setLoading(true);
+      const data = JSON.stringify(values);
+      const res = await axios.post("/api/email/contact/he", data);
+      if (res.status === 200) {
+        return toast({
+          variant: "success",
+          title: "בקשת הקשר שלך",
+          description: "נשלחה בהצלחה",
+        });
+      } else {
+        return toast({
+          variant: "destructive",
+          title: "אופס! משהו השתבש.",
+          description: "הייתה בעיה בבקשה שלך.",
+        });
+      }
+    } catch (error) {
+      setLoading(false);
+      return toast({
+        variant: "destructive",
+        title: "אופס! משהו השתבש.",
+        description: "הייתה בעיה בבקשה שלך.",
+      });
+    } finally {
+      setLoading(false);
+      form.reset({
+        message: "",
+        email: "",
+        name: "",
+        phone: "",
+      });
+    }
   }
   return (
     <section className="container mx-auto" dir="rtl">
@@ -48,6 +82,21 @@ const ContactUsFormHe = () => {
                 </FormLabel>
                 <FormControl>
                   <Input placeholder="השם שלכה" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="phone"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>
+                  <p className="bold text-red-500">*</p> מספר טלפון
+                </FormLabel>
+                <FormControl>
+                  <Input placeholder="מספר טלפון שלכה" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -90,6 +139,7 @@ const ContactUsFormHe = () => {
           <div className="flex justify-center items-center">
             <Button
               type="submit"
+              disabled={loading}
               className=" text-white py-2 px-4 rounded hover:bg-purple-600 w-52 h-10"
             >
               שלח הודעה

@@ -16,8 +16,11 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "../ui/textarea";
+import axios from "axios";
+import { toast } from "../ui/use-toast";
 
 const ContactUsFormAr = () => {
+  const [loading, setLoading] = React.useState(false);
   const form = useForm<z.infer<typeof ContactUsSchemaAr>>({
     resolver: zodResolver(ContactUsSchemaAr),
     defaultValues: {
@@ -26,10 +29,40 @@ const ContactUsFormAr = () => {
       message: "",
     },
   });
-  function onSubmit(values: z.infer<typeof ContactUsSchemaAr>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof ContactUsSchemaAr>) {
+    try {
+      setLoading(true);
+      const data = JSON.stringify(values);
+      const res = await axios.post("/api/email/contact/ar", data);
+      if (res.status === 200) {
+        return toast({
+          variant: "success",
+          title: "طلب الاتصال الخاص بك",
+          description: "تم إرساله بنجاح",
+        });
+      } else {
+        return toast({
+          variant: "destructive",
+          title: "عفوا! حدث خطأ ما.",
+          description: "حدثت مشكلة في طلبك.",
+        });
+      }
+    } catch (error) {
+      setLoading(false);
+      return toast({
+        variant: "destructive",
+        title: "عفوا! حدث خطأ ما.",
+        description: "حدثت مشكلة في طلبك.",
+      });
+    } finally {
+      setLoading(false);
+      form.reset({
+        message: "",
+        email: "",
+        name: "",
+        phone: "",
+      });
+    }
   }
   return (
     <section className="container mx-auto" dir="rtl">
@@ -48,6 +81,21 @@ const ContactUsFormAr = () => {
                 </FormLabel>
                 <FormControl>
                   <Input placeholder="اسمك" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="phone"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>
+                  <p className="bold text-red-500">*</p> رقم الهاتف
+                </FormLabel>
+                <FormControl>
+                  <Input placeholder="رقم الهاتف" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -90,6 +138,7 @@ const ContactUsFormAr = () => {
           <div className="flex justify-center items-center">
             <Button
               type="submit"
+              disabled={loading}
               className=" text-white py-2 px-4 rounded hover:bg-purple-600 w-52 h-10"
             >
               ارسل رسالة{" "}

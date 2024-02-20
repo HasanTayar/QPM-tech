@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useState } from "react";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { useForm } from "react-hook-form";
 import { z } from "zod";
@@ -16,21 +16,56 @@ import {
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "../ui/textarea";
+import axios from "axios";
+import { toast } from "../ui/use-toast";
 
 const ContactUsFormEn = () => {
+  const [loading, setLoading] = useState(false);
   const form = useForm<z.infer<typeof ContactUsSchemaEN>>({
     resolver: zodResolver(ContactUsSchemaEN),
     defaultValues: {
       name: "",
       email: "",
+      phone: "",
       message: "",
     },
   });
-  function onSubmit(values: z.infer<typeof ContactUsSchemaEN>) {
-    // Do something with the form values.
-    // ✅ This will be type-safe and validated.
-    console.log(values);
+  async function onSubmit(values: z.infer<typeof ContactUsSchemaEN>) {
+    try {
+      setLoading(true);
+      const data = JSON.stringify(values);
+      const res = await axios.post("/api/email/contact/en", data);
+      if (res.status === 200) {
+        return toast({
+          variant: "success",
+          title: "Your contact request",
+          description: "has been sent successfully",
+        });
+      } else {
+        return toast({
+          variant: "destructive",
+          title: "Uh oh! Something went wrong.",
+          description: "There was a problem with your request.",
+        });
+      }
+    } catch (error) {
+      setLoading(false);
+      return toast({
+        variant: "destructive",
+        title: "Uh oh! Something went wrong.",
+        description: "There was a problem with your request.",
+      });
+    } finally {
+      setLoading(false);
+      form.reset({
+        message: "",
+        email: "",
+        name: "",
+        phone: "",
+      });
+    }
   }
+
   return (
     <section className="container mx-auto">
       <Form {...form}>
@@ -48,6 +83,21 @@ const ContactUsFormEn = () => {
                 </FormLabel>
                 <FormControl>
                   <Input placeholder="Your Name" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <FormField
+            control={form.control}
+            name="phone"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>
+                  <p className="bold text-red-500">*</p> Phone
+                </FormLabel>
+                <FormControl>
+                  <Input placeholder="Your Phone number" {...field} />
                 </FormControl>
                 <FormMessage />
               </FormItem>
@@ -91,6 +141,7 @@ const ContactUsFormEn = () => {
             <Button
               type="submit"
               className=" text-white py-2 px-4 rounded hover:bg-purple-600 w-52 h-10"
+              disabled={loading}
             >
               Send Message
             </Button>
