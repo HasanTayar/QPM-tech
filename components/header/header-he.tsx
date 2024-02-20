@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import LangSwitcher from "../lang-switcher";
+import SideBarHe from "../sidebar/sidebar-he";
 
 const HeaderHe = () => {
   const [hasScrolled, setHasScrolled] = useState(false);
@@ -41,8 +42,8 @@ const HeaderHe = () => {
 
       {/* Navigation menu */}
       <div className="flex justify-center">
-        <nav className="hidden md:block">
-          <ul className="flex flex-row space-x-4 md:space-x-8 items-center  md:mr-96">
+        <nav className="hidden lg:block">
+          <ul className="flex flex-row space-x-4 lg:space-x-8 items-center  lg:mr-96">
             <li>
               <Link href="/he">
                 <div
@@ -89,8 +90,11 @@ const HeaderHe = () => {
             </li>
           </ul>
         </nav>
-        <div className="mr-11">
+        <div className="hidden lg:mr-11">
           <LangSwitcher />
+        </div>
+        <div className="lg:hidden">
+          <SideBarHe />
         </div>
       </div>
     </header>

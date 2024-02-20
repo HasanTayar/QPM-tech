@@ -18,14 +18,13 @@ import {
   SheetTrigger,
 } from "../ui/sheet";
 import classNames from "classnames";
-const SideBarEn = () => {
+const SideBarHe = () => {
   const pathname = usePathname();
-  const [isSheetOpen, setIsSheetOpen] = useState(false);
   const links = [
-    { href: "/", icon: HomeIcon, label: "Home" },
-    { href: "/contact", icon: ContactIcon, label: "Contact" },
-    { href: "/about-us", icon: Info, label: "About us" },
-    { href: "/portfolio", icon: Briefcase, label: "Portfolio" },
+    { href: "/he", icon: HomeIcon, label: "דף ראשי" },
+    { href: "/he/contact", icon: ContactIcon, label: "צור קשר" },
+    { href: "/he/about-us", icon: Info, label: "אדתנו" },
+    { href: "/he/portfolio", icon: Briefcase, label: "עבדות שלנו" },
   ];
 
   const getButtonClasses = (href: string) => {
@@ -48,18 +47,18 @@ const SideBarEn = () => {
       <SheetContent className="bg-gray-100 dark:bg-gray-800">
         <SheetHeader className="p-4">
           <SheetTitle className="text-xl font-bold text-gray-900 dark:text-gray-100">
-            Menu
+            תפריט
           </SheetTitle>
-          <section className="mt-4">
+          <section className="mt-4" dir="rtl">
             <Accordion type="single" className="p-4">
               <AccordionItem value="item-1" className="mb-4">
                 <AccordionTrigger color="blue" className="text-lg">
-                  Languages
+                  שפות
                 </AccordionTrigger>
-                <AccordionContent className="flex space-x-2">
-                  <Link href="/he">
+                <AccordionContent className="flex space-x-4">
+                  <Link href="/">
                     <Button variant="outline" color="blue">
-                      עברית
+                      english
                     </Button>
                   </Link>
                   <Link href="/ar">
@@ -71,11 +70,14 @@ const SideBarEn = () => {
               </AccordionItem>
             </Accordion>
           </section>
-          <section className="pt-2 flex flex-col gap-10 md:grid-cols-1 md:gap-0">
+          <section
+            className="pt-2 flex flex-col gap-10 md:grid-cols-1 md:gap-0"
+            dir="rtl"
+          >
             {links.map((link) => (
               <Link key={link.href} href={link.href}>
                 <p className={getButtonClasses(link.href)}>
-                  <link.icon className="h-6 w-6 mr-2" /> {link.label}
+                  <link.icon className="h-6 w-6 ml-2" /> {link.label}
                 </p>
               </Link>
             ))}
@@ -86,4 +88,4 @@ const SideBarEn = () => {
   );
 };
 
-export default SideBarEn;
+export default SideBarHe;

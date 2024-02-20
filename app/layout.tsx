@@ -4,6 +4,7 @@ import "./globals.css";
 import HeaderEn from "@/components/header/header-en";
 import FooterEn from "@/components/footer/footer-en";
 import { Toaster } from "@/components/ui/toaster";
+import WhatsAppProvider from "@/components/whatsapp-provider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -23,7 +24,7 @@ export default function RootLayout({
         <HeaderEn />
         <Toaster />
         {children}
-
+        <WhatsAppProvider />
         <FooterEn />
       </body>
     </html>
