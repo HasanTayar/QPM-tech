@@ -1,7 +1,38 @@
 import ContactUsFormAr from "@/components/forms/contact-us-form-ar";
+import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
-// import Map from "@/components/Map";
+export const metadata: Metadata = {
+  // Change the title of your content to "QPMatrix | Contact Us"
+  title: "QPMatrix | اتصل بنا",
+  // Change the description of your content to summarize your contact details
+  description:
+    "نحن دائمًا مفتوحون لسماعك والإجابة على أي سؤال أو طلب لديك. يمكنك الاتصال بنا من خلال النموذج التالي ، أو إرسال بريد إلكتروني إلينا على info@qpmatrix.tech ، أو الاتصال بنا على الهاتف 9720524802045. سنحاول الرد عليك في أقرب وقت ممكن.",
+  openGraph: {
+    // Change the title of your content to "QPMatrix | Contact Us"
+    title: "QPMatrix | اتصل بنا",
+    // Change the description of your content to summarize your contact details
+    description:
+      "نحن دائمًا مفتوحون لسماعك والإجابة على أي سؤال أو طلب لديك. يمكنك الاتصال بنا من خلال النموذج التالي ، أو إرسال بريد إلكتروني إلينا على info@qpmatrix.tech ، أو الاتصال بنا على الهاتف 9720524802045.",
+    // Change the type of your content to "article"
+    type: "article",
+    // Change the URL of your content to match the contact page
+    url: "https://qpmatrix.tech/ar/contact",
+    // Change the image of your content to show your contact details
+    images: [
+      {
+        // Specify the URL of the image
+        url: "https://qpmatrix.tech/contact-image.avif",
+        // Specify the width of the image in pixels
+        width: 800,
+        // Specify the height of the image in pixels
+        height: 600,
+        // Specify the alternative text of the image
+        alt: "بيانات الاتصال الخاصة بنا",
+      },
+    ],
+  },
+};
 
 const ContactPageAr = () => {
   return (
@@ -25,12 +56,7 @@ const ContactPageAr = () => {
         <section className="flex flex-col md:flex-row md:justify-between items-center">
           <ContactUsFormAr />
         </section>
-        <section className="mt-8">
-          <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl text-slate-900 p-4">
-            موقعنا
-          </h2>
-          {/* Uncomment and use the Map component when ready, ensuring it's responsive */}
-        </section>
+
         <section className="mt-8 p-4">
           <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl text-slate-900">
             العنوان | ساعات العمل{" "}

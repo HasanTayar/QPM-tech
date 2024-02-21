@@ -1,8 +1,39 @@
 import { Button } from "@/components/ui/button";
+import { Metadata } from "next";
 import Image from "next/legacy/image";
 import Link from "next/link";
 import React from "react";
-
+export const metadata: Metadata = {
+  // Change the title of your content to "QPMatrix | About Us"
+  title: "QPMatrix | من نحن",
+  // Change the description of your content to summarize your contact details
+  description:
+    "نحن شركة رائدة في تطوير المواقع والتطبيقات في إسرائيل ، متخصصون في استخدام أحدث التقنيات ، مثل ووردبريس ، HTML ، CSS ، JS ، React ، و Angular. إذا كنت مهتمًا بمعرفة المزيد عن خدماتنا ، أو الحصول على عرض أسعار ، يرجى الاتصال بنا من خلال النموذج ، أو البريد الإلكتروني ، أو الهاتف الخاص بنا. سنكون سعداء لخدمتك في أي سؤال أو طلب.",
+  openGraph: {
+    // Change the title of your content to "QPMatrix | About Us"
+    title: "QPMatrix | من نحن",
+    // Change the description of your content to summarize your contact details
+    description:
+      "نحن شركة رائدة في تطوير المواقع والتطبيقات في إسرائيل ، متخصصون في استخدام أحدث التقنيات ، مثل ووردبريس ، HTML ، CSS ، JS ، React ، و Angular. إذا كنت مهتمًا بمعرفة المزيد عن خدماتنا ، أو الحصول على عرض أسعار ، يرجى الاتصال بنا من خلال النموذج ، أو البريد الإلكتروني ، أو الهاتف الخاص بنا.",
+    // Change the type of your content to "article"
+    type: "article",
+    // Change the URL of your content to match the contact page
+    url: "https://qpmatrix.tech/ar/about-us",
+    // Change the image of your content to show your contact details
+    images: [
+      {
+        // Specify the URL of the image
+        url: "https://qpmatrix.tech/about-us.avif",
+        // Specify the width of the image in pixels
+        width: 800,
+        // Specify the height of the image in pixels
+        height: 600,
+        // Specify the alternative text of the image
+        alt: "بيانات الاتصال الخاصة بنا",
+      },
+    ],
+  },
+};
 const AboutUsArPage = () => {
   return (
     <main className="container mx-auto px-4 lg:px-8 xl:px-16" dir="rtl">

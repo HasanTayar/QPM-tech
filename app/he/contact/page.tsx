@@ -8,17 +8,17 @@ export const metadata: Metadata = {
   title: "QPMatrix | צור קשר",
   // Change the description of your content to summarize your contact details
   description:
-    "אנחנו תמיד פתוחים לשמוע ממך ולענות על כל שאלה או בקשה שיש לך. אתה יכול ליצור איתנו קשר באמצעות הטופס הבא, או לשלוח לנו אימייל לכתובת info@qpmatrix.tech, או להתקשר לנו בטלפון 972-4-1234567. אנחנו נשתדל לחזור אליך בהקדם האפשרי.",
+    "אנחנו תמיד פתוחים לשמוע ממך ולענות על כל שאלה או בקשה שיש לך. אתה יכול ליצור איתנו קשר באמצעות הטופס הבא, או לשלוח לנו אימייל לכתובת info@qpmatrix.tech, או להתקשר לנו בטלפון 9720524802045 אנחנו נשתדל לחזור אליך בהקדם האפשרי.",
   openGraph: {
     // Change the title of your content to "QPMatrix | Contact Us"
     title: "QPMatrix | צור קשר",
     // Change the description of your content to summarize your contact details
     description:
-      "אנחנו תמיד פתוחים לשמוע ממך ולענות על כל שאלה או בקשה שיש לך. אתה יכול ליצור איתנו קשר באמצעות הטופס הבא, או לשלוח לנו אימייל לכתובת info@qpmatrix.tech, או להתקשר לנו בטלפון 972-4-1234567. אנחנו נשתדל לחזור אליך בהקדם האפשרי.",
+      "אנחנו תמיד פתוחים לשמוע ממך ולענות על כל שאלה או בקשה שיש לך. אתה יכול ליצור איתנו קשר באמצעות הטופס הבא, או לשלוח לנו אימייל לכתובת info@qpmatrix.tech, או להתקשר לנו בטלפון 9720524802045 אנחנו נשתדל לחזור אליך בהקדם האפשרי.",
     // Change the type of your content to "article"
     type: "article",
     // Change the URL of your content to match the contact page
-    url: "https://qpmatrix.tech/he/contact-us",
+    url: "https://qpmatrix.tech/he/contact",
     // Change the image of your content to show your contact details
     images: [
       {
@@ -57,12 +57,7 @@ const ContactPageHe = () => {
         <section className="flex flex-col md:flex-row md:justify-between items-center">
           <ContactUsFormHe />
         </section>
-        <section className="mt-8">
-          <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl text-slate-900 p-4">
-            מקום
-          </h2>
-          {/* Uncomment and use the Map component when ready, ensuring it's responsive */}
-        </section>
+
         <section className="mt-8 p-4">
           <h2 className="font-bold text-2xl md:text-3xl lg:text-4xl text-slate-900">
             כתובת | שעות עבודה{" "}
