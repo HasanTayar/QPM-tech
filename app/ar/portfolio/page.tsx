@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     images: [
       {
         // Specify the URL of the image
-        url: "https://qpmatrix.tech/about-us-image-1.avif",
+        url: "/about-us-image-1.avif",
         // Specify the width of the image in pixels
         width: 800,
         // Specify the height of the image in pixels

@@ -41,7 +41,7 @@ const SideBarAr = () => {
     <Sheet>
       <SheetTrigger>
         <Button variant="ghost" className="text-2xl">
-          <MenuIcon size={"icon"} />
+          <MenuIcon size={"icon"} className="h-6 w-6" />
         </Button>
       </SheetTrigger>
       <SheetContent className="bg-gray-100 dark:bg-gray-800">
@@ -77,7 +77,8 @@ const SideBarAr = () => {
             {links.map((link) => (
               <Link key={link.href} href={link.href}>
                 <p className={getButtonClasses(link.href)}>
-                  <link.icon className="h-6 w-6 ml-2" /> {link.label}
+                  <link.icon className="h-6 w-6 ml-2" size="icon" />{" "}
+                  {link.label}
                 </p>
               </Link>
             ))}

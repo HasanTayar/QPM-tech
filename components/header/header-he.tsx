@@ -29,12 +29,11 @@ const HeaderHe = () => {
       <div className="flex-shrink-0">
         <Link href="/he/">
           <Image
-            src={"/QPM.LOGO.svg"}
-            alt={"QPM-HE-LOGO"}
-            width={130}
-            height={70}
+            src={"/icons/favicon-512x512.png"}
+            alt={"QPM-AR-LOGO"}
+            width={50}
+            height={50}
             quality={100}
-            layout="intrinsic"
             className="ml-20"
           />
         </Link>
@@ -93,7 +92,7 @@ const HeaderHe = () => {
         <div className="hidden lg:mr-11">
           <LangSwitcher />
         </div>
-        <div className="lg:hidden">
+        <div className="lg:hidden mr-11">
           <SideBarHe />
         </div>
       </div>

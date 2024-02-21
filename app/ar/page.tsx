@@ -21,7 +21,7 @@ export const metadata: Metadata = {
     images: [
       {
         // Specify the URL of the image
-        url: "https://qpmatrix.tech/QPM.LOGO.svg",
+        url: "/icons/favicon-512x512.png",
         // Specify the width of the image in pixels
         width: 800,
         // Specify the height of the image in pixels

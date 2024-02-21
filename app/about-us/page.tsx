@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     url: "https://qpmatrix.tech/about-us",
     images: [
       {
-        url: "https://qpmatrix.tech/about-us.avif",
+        url: "/about-us.avif",
         width: 800,
         height: 600,
         alt: "Our contact details",
