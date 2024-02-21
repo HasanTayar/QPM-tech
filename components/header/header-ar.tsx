@@ -89,7 +89,7 @@ const HeaderAr = () => {
             </li>
           </ul>
         </nav>
-        <div className="hidden lg:mr-11">
+        <div className="hidden lg:mr-11 lg:block">
           <LangSwitcher />
         </div>
         <div className="lg:hidden ml-11">

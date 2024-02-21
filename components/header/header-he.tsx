@@ -89,7 +89,7 @@ const HeaderHe = () => {
             </li>
           </ul>
         </nav>
-        <div className="hidden lg:mr-11">
+        <div className="hidden lg:mr-11 lg:block">
           <LangSwitcher />
         </div>
         <div className="lg:hidden mr-11">
