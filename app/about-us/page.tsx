@@ -1,8 +1,28 @@
 import { Button } from "@/components/ui/button";
+import { Metadata } from "next";
 import Image from "next/legacy/image";
 import Link from "next/link";
 import React from "react";
-
+export const metadata: Metadata = {
+  title: "QPMatrix | About us",
+  description:
+    "We are a leading web and app development company in Israel, specializing in using the most innovative technologies, such as WordPress, HTML, CSS, JS, React, and Angular. If you are interested in hearing more about our services, or getting a quote, please contact us through the form, email, or phone. We will be happy to assist you with any question or request.",
+  openGraph: {
+    title: "QPMatrix | About us",
+    description:
+      "We are a leading web and app development company in Israel, specializing in using the most innovative technologies, such as WordPress, HTML, CSS, JS, React, and Angular. If you are interested in hearing more about our services, or getting a quote, please contact us through the form, email, or phone. We will be happy to assist you with any question or request.",
+    type: "article",
+    url: "https://qpmatrix.tech/about-us",
+    images: [
+      {
+        url: "https://qpmatrix.tech/about-us.avif",
+        width: 800,
+        height: 600,
+        alt: "Our contact details",
+      },
+    ],
+  },
+};
 const AboutUsPageEn = () => {
   return (
     <main className="container mx-auto px-4 lg:px-8 xl:px-16">

@@ -3,6 +3,38 @@ import Image from "next/legacy/image";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ProjectsHe } from "@/constants/projects";
+import { Metadata } from "next/types";
+export const metadata: Metadata = {
+  // Change the title of your content to "QPMatrix | Our Works"
+  title: "QPMatrix | עבודות שלנו",
+  // Change the description of your content to summarize your works
+  description:
+    "בעמוד זה תוכלו לראות חלק מהעבודות המדהימות שאנחנו עשינו ללקוחותינו בתחומי הפיתוח האתרים והאפליקציות. אנחנו יוצרים פתרונות ייחודיים ומותאמים אישית לכל סוג של עסק או ארגון, בהתאם למטרות ולציפיות שלהם. אנחנו משלבים עיצוב יפה ומשתמש, טכנולוגיות מתקדמות, ושיווק אפקטיבי, כדי להבטיח את ההצלחה של הפרויקטים שלנו.",
+  openGraph: {
+    // Change the title of your content to "QPMatrix | Our Works"
+    title: "QPMatrix | עבודות שלנו",
+    // Change the description of your content to summarize your works
+    description:
+      "בעמוד זה תוכלו לראות חלק מהעבודות המדהימות שאנחנו עשינו ללקוחותינו בתחומי הפיתוח האתרים והאפליקציות. אנחנו יוצרים פתרונות ייחודיים ומותאמים אישית לכל סוג של עסק או ארגון, בהתאם למטרות ולציפיות שלהם. אנחנו משלבים עיצוב יפה ומשתמש, טכנולוגיות מתקדמות, ושיווק אפקטיבי, כדי להבטיח את ההצלחה של הפרויקטים שלנו.",
+    // Change the type of your content to "article"
+    type: "article",
+    // Change the URL of your content to match the works page
+    url: "https://qpmatrix.tech/he/portfolio",
+    // Change the image of your content to show some of your works
+    images: [
+      {
+        // Specify the URL of the image
+        url: "https://qpmatrix.tech/about-us-image-1.avif",
+        // Specify the width of the image in pixels
+        width: 800,
+        // Specify the height of the image in pixels
+        height: 600,
+        // Specify the alternative text of the image
+        alt: "Some of our works",
+      },
+    ],
+  },
+};
 
 const PortfolioPageAr = () => {
   return (

@@ -1,9 +1,41 @@
 import { Button } from "@/components/ui/button";
+import { Metadata } from "next";
 import Image from "next/legacy/image";
 import Link from "next/link";
 import React from "react";
+export const metadata: Metadata = {
+  // Change the title of your content to "QPMatrix | Contact Us"
+  title: "QPMatrix | אדתנו",
+  // Change the description of your content to summarize your contact details
+  description:
+    "אנחנו חברת פיתוח אתרים ואפליקציות מובילה בישראל, המומחית בשימוש בטכנולוגיות החדשניות ביותר, כגון וורדפרס, HTML, CSS, JS, React, ו-Angular. אם אתם מעוניינים לשמוע עוד על השירותים שלנו, או לקבל הצעת מחיר, אנא צרו איתנו קשר באמצעות הטופס, האימייל, או הטלפון שלנו. אנחנו נשמח לעמוד לרשותכם בכל שאלה או בקשה.",
+  openGraph: {
+    // Change the title of your content to "QPMatrix | Contact Us"
+    title: "QPMatrix | אדתנו",
+    // Change the description of your content to summarize your contact details
+    description:
+      "אנחנו חברת פיתוח אתרים ואפליקציות מובילה בישראל, המומחית בשימוש בטכנולוגיות החדשניות ביותר, כגון וורדפרס, HTML, CSS, JS, React, ו-Angular. אם אתם מעוניינים לשמוע עוד על השירותים שלנו, או לקבל הצעת מחיר, אנא צרו איתנו קשר באמצעות הטופס, האימייל, או הטלפון שלנו. אנחנו נשמח לעמוד לרשותכם בכל שאלה או בקשה.",
+    // Change the type of your content to "article"
+    type: "article",
+    // Change the URL of your content to match the contact page
+    url: "https://qpmatrix.tech/he/about-us",
+    // Change the image of your content to show your contact details
+    images: [
+      {
+        // Specify the URL of the image
+        url: "https://qpmatrix.tech/about-us.avif",
+        // Specify the width of the image in pixels
+        width: 800,
+        // Specify the height of the image in pixels
+        height: 600,
+        // Specify the alternative text of the image
+        alt: "Our contact details",
+      },
+    ],
+  },
+};
 
-const AboutUsArPage = () => {
+const AboutUsHePage = () => {
   return (
     <main className="container mx-auto px-4 lg:px-8 xl:px-16" dir="rtl">
       {/* Main section talking about the company */}
@@ -191,4 +223,4 @@ const AboutUsArPage = () => {
   );
 };
 
-export default AboutUsArPage;
+export default AboutUsHePage;

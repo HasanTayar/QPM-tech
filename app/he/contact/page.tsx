@@ -2,8 +2,40 @@ import ContactUsFormHe from "@/components/forms/contact-us-form-he";
 import Link from "next/link";
 import React from "react";
 // import Map from "@/components/Map";
+import { Metadata } from "next/types";
+export const metadata: Metadata = {
+  // Change the title of your content to "QPMatrix | Contact Us"
+  title: "QPMatrix | צור קשר",
+  // Change the description of your content to summarize your contact details
+  description:
+    "אנחנו תמיד פתוחים לשמוע ממך ולענות על כל שאלה או בקשה שיש לך. אתה יכול ליצור איתנו קשר באמצעות הטופס הבא, או לשלוח לנו אימייל לכתובת info@qpmatrix.tech, או להתקשר לנו בטלפון 972-4-1234567. אנחנו נשתדל לחזור אליך בהקדם האפשרי.",
+  openGraph: {
+    // Change the title of your content to "QPMatrix | Contact Us"
+    title: "QPMatrix | צור קשר",
+    // Change the description of your content to summarize your contact details
+    description:
+      "אנחנו תמיד פתוחים לשמוע ממך ולענות על כל שאלה או בקשה שיש לך. אתה יכול ליצור איתנו קשר באמצעות הטופס הבא, או לשלוח לנו אימייל לכתובת info@qpmatrix.tech, או להתקשר לנו בטלפון 972-4-1234567. אנחנו נשתדל לחזור אליך בהקדם האפשרי.",
+    // Change the type of your content to "article"
+    type: "article",
+    // Change the URL of your content to match the contact page
+    url: "https://qpmatrix.tech/he/contact-us",
+    // Change the image of your content to show your contact details
+    images: [
+      {
+        // Specify the URL of the image
+        url: "https://qpmatrix.tech/contact-image.avif",
+        // Specify the width of the image in pixels
+        width: 800,
+        // Specify the height of the image in pixels
+        height: 600,
+        // Specify the alternative text of the image
+        alt: "Our contact details",
+      },
+    ],
+  },
+};
 
-const ContactPageAr = () => {
+const ContactPageHe = () => {
   return (
     <main className="mx-auto max-w-4xl" dir="rtl">
       {/* Set a max-width to prevent the layout from stretching too wide on large screens */}
@@ -17,9 +49,9 @@ const ContactPageAr = () => {
           {/* Adjust base text size for readability */}
           צור איתנו קשר עוד היום!{" "}
         </p>
-        <Link href="mailto:info@quantumpinnaclematrix.tech">
+        <Link href="mailto:info@QPMatrix.tech">
           <p className="text-blue-600 hover:text-blue-800 visited:text-purple-600">
-            info@quantumpinnaclematrix.tech
+            info@QPMatrix.tech
           </p>
         </Link>
         <section className="flex flex-col md:flex-row md:justify-between items-center">
@@ -47,4 +79,4 @@ const ContactPageAr = () => {
   );
 };
 
-export default ContactPageAr;
+export default ContactPageHe;
