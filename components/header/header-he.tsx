@@ -92,7 +92,7 @@ const HeaderHe = () => {
         <div className="hidden lg:mr-11 lg:block">
           <LangSwitcher />
         </div>
-        <div className="lg:hidden mr-11">
+        <div className="lg:hidden ml-11">
           <SideBarHe />
         </div>
       </div>
