@@ -5,7 +5,7 @@ import HeaderEn from "@/components/header/header-en";
 import FooterEn from "@/components/footer/footer-en";
 import { Toaster } from "@/components/ui/toaster";
 import WhatsAppProvider from "@/components/whatsapp-provider";
-
+import { SpeedInsights } from "@vercel/speed-insights/next";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -49,6 +49,7 @@ export default function RootLayout({
         <HeaderEn />
         <Toaster />
         {children}
+        <SpeedInsights />
         <WhatsAppProvider />
         <FooterEn />
       </body>
