@@ -7,6 +7,7 @@ import { Toaster } from "@/components/ui/toaster";
 import WhatsAppProvider from "@/components/whatsapp-provider";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 const inter = Inter({ subsets: ["latin"] });
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "QPMatrix | Home Page",
@@ -50,6 +51,7 @@ export default function RootLayout({
         <Toaster />
         {children}
         <SpeedInsights />
+        <Analytics />
         <WhatsAppProvider />
         <FooterEn />
       </body>
